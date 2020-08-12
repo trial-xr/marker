@@ -11,10 +11,15 @@
 
   <!-- ③ 作成したマーカーでのソース -->
   <a-marker type='pattern' url='./marker/pattern-sakuramochi.patt'>
+    <!--
     <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00">
       <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
       </a-animation>
     </a-sphere>
+    -->
+    <a-entity  animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 1000; loop: true"> 
+      <a-image src="./marker/sakuramochi.png" width="4" height="4" position="0 -0.2 -5"></a-image>
+    </a-entity>
   </a-marker>
 
 
