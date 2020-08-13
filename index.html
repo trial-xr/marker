@@ -12,16 +12,11 @@
   <!-- ③ 作成したマーカーでのソース -->
   <a-marker type='pattern' url='./marker/pattern-sakuramochi.patt'>
 
-    <a-box
-        position="0 2 -5"
-        rotation="0 45 45"
-        scale="2 2 2"
-        color="rgb(222, 222, 222)"
-        animation="property:position; from:0 2 -5; to:0 3 -5; dur:2000; dir:alternate; loop:true;"
-        animation__enter="property:scale; from:2 2 2; to:2.5 2.5 2.5; dur:300; startEvents:mouseenter;"
-        animation__leave="property:scale; from:2.5 2.5 2.5; to:2 2 2; dur:300; startEvents:mouseleave;"
-        animation__click="property:rotation; from:0 45 45; to:360 405 45; dur:2000; startEvents:click;">
-    </a-box>
+    <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00">
+      <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
+      </a-animation>
+    </a-sphere>
+
   </a-marker>
 
 
